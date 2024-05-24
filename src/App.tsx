@@ -6,13 +6,13 @@ import Navbar from './components/navbar/NavBar';
 
 function App() {
   return (
-    <>
+    <div className='bg-gray-900'>
       <Navbar />
       <Hero />
       <Featured />
       <About />
       <Footer />
-    </>
+    </div>
   );
 }
 
