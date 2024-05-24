@@ -1,16 +1,11 @@
 import React from 'react';
 import { Blog } from '../../interfaces/Blog';
+import { Link } from 'react-router-dom';
 
-const BlogCard: React.FC<Blog> = ({
-  title,
-  thumbnail,
-  description,
-  tags,
-  Component,
-}) => {
+const BlogCard: React.FC<Blog> = ({ title, thumbnail, description, tags }) => {
   return (
-    <a
-      href='#'
+    <Link
+      to={`/blog/${title}`}
       className='flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-md md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 mb-4 mx-auto w-full md:w-3/4 lg:w-2/3'
     >
       <img
@@ -36,7 +31,7 @@ const BlogCard: React.FC<Blog> = ({
           ))}
         </div>
       </div>
-    </a>
+    </Link>
   );
 };
 

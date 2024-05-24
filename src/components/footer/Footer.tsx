@@ -57,7 +57,7 @@ const Footer = () => {
                 rel='noopener noreferrer'
                 className='hover:underline'
               >
-                <FaExternalLinkAlt className='h-5 w-5 mb-6' />
+                <FaExternalLinkAlt className='h-5 w-5' />
               </a>
             </li>
           </ul>

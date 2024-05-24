@@ -1,18 +1,27 @@
-import About from './components/about/About';
-import Featured from './components/featured/Featured';
-import Footer from './components/footer/Footer';
-import Hero from './components/hero/Hero';
-import Navbar from './components/navbar/NavBar';
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import { blogs } from './blogs';
+import ErrorPage from './pages/ErrorPage';
 function App() {
   return (
-    <div className='bg-gray-900'>
-      <Navbar />
-      <Hero />
-      <Featured />
-      <About />
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path='/DevNerd' element={<HomePage />} />
+
+        {/*Blog routes are added here */}
+        {blogs.map((blog, index) => (
+          <Route
+            key={index}
+            path={`/blog/${blog.title}`}
+            element={<blog.Component />}
+          />
+        ))}
+
+        {/* Error route goes here */}
+
+        <Route path='*' element={<ErrorPage />} />
+      </Routes>
+    </Router>
   );
 }
 
