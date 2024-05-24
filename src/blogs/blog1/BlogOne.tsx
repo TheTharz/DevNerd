@@ -14,20 +14,16 @@ import {
   CodeSnippetUserModel,
 } from './code-snippets/codeSnipptes';
 import Footer from '../../components/footer/Footer';
+import TextToSpeech from '../../utils/TextToSpeech';
+import { SpeachOfBlog } from './text-to-speech/textToSpeech';
+
 type Props = {};
 
 function BlogOne({}: Props) {
-  const codeSnippet = `
-    // Your code snippet here
-    const greet = (name: string): string => {
-      return \`Hello, \${name}!\`;
-    };
-    console.log(greet('World'));
-  `;
-
   return (
     <>
       <Navbar />
+      <TextToSpeech text={SpeachOfBlog} />
 
       <div className='flex justify-center items-center flex-col mx-64 m-4 p-4'>
         <h1 className=' text-5xl font-bold py-4'>
@@ -53,7 +49,7 @@ function BlogOne({}: Props) {
           alt='file'
           className=' max-w-3xl h-auto rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out'
         />
-        <CodeHighlighter codeSnippet={codeSnippet} language='TypeScript' />
+
         <p>Let’s understand one by one.</p>
         <p>app.js:</p>
         <ul>
