@@ -1,30 +1,24 @@
-# React + TypeScript + Vite
+# DevNerd Blog by Tharindu Jayawardhana
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to **DevNerd**, my personal blog dedicated to all things technology! I'm Tharindu Jayawardhana, a passionate computer engineering student, and this blog is where I share my thoughts, experiences, and insights about the ever-evolving world of technology.
 
-Currently, two official plugins are available:
+## Summary
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Purpose:** DevNerd is a platform for me to explore and discuss various topics related to computer engineering, software development, cybersecurity, and emerging technologies.
+  
+- **Content:** Expect to find articles, tutorials, reviews, and opinions on programming languages, frameworks, tools, industry trends, and more.
+  
+- **Audience:** Whether you're a fellow student, a seasoned developer, or simply curious about tech, DevNerd aims to provide informative and engaging content for everyone.
+  
+- **Contact:** Feel free to reach out to me via email at [tharinduimalkajayawardhana@gmail.com](mailto:tharinduimalkajayawardhana@gmail.com) for any inquiries or collaborations.
 
-## Expanding the ESLint configuration
+## About Tharindu Jayawardhana
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+I'm a computer engineering enthusiast with a keen interest in software development, cybersecurity, and artificial intelligence. Through DevNerd, I strive to share my knowledge, learn from the community, and contribute to the tech ecosystem.
 
-- Configure the top-level `parserOptions` property like this:
+## Stay Connected
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- **Blog:** [DevNerd](https://thetharz.github.io/DevNerd/)
+- **Email:** [tharinduimalkajayawardhana@gmail.com](mailto:tharinduimalkajayawardhana@gmail.com)
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Thank you for visiting DevNerd! Dive into the world of technology with me.
