@@ -1,8 +1,4 @@
-import React from 'react';
-
-type Props = {};
-
-function Hero({}: Props) {
+function Hero() {
   return (
     <div>
       <section className=' text-white py-20'>

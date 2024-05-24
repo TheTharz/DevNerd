@@ -1,4 +1,3 @@
-import React from 'react';
 import { blogs } from '../../blogs';
 import BlogCard from '../blogcard/BlogCard';
 
