@@ -7,7 +7,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path='/DevNerd' element={<HomePage />} />
+        <Route path='/DevNerd' element={<AboutPage />} />
 
         {/*Blog routes are added here */}
         {blogs.map((blog, index) => (
