@@ -7,7 +7,12 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path='/' element={<HomePage />} />
+        <Route path='/DevNerd' element={<HomePage />} />
+        <Route path='/DevNerd/about' element={<AboutPage />} />
+
+        {/* Error route goes here */}
+
+        <Route path='*' element={<ErrorPage />} />
 
         {/*Blog routes are added here */}
         {blogs.map((blog, index) => (
@@ -17,12 +22,6 @@ function App() {
             element={<blog.Component />}
           />
         ))}
-
-        <Route path='/about' element={<AboutPage />} />
-
-        {/* Error route goes here */}
-
-        <Route path='*' element={<ErrorPage />} />
       </Routes>
     </Router>
   );
