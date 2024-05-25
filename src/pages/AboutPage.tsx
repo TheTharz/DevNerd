@@ -2,9 +2,7 @@ import Navbar from '../components/navbar/NavBar';
 import Footer from '../components/footer/Footer';
 import { FaLinkedin, FaGithub, FaEnvelope, FaGlobe } from 'react-icons/fa';
 
-type Props = {};
-
-function AboutPage({}: Props) {
+function AboutPage() {
   return (
     <div className='bg-slate-900 min-h-screen flex flex-col'>
       <Navbar />
