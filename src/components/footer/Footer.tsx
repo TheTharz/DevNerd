@@ -12,7 +12,7 @@ const Footer = () => {
         <div className='sm:flex sm:items-center sm:justify-between'>
           {/* Logo and Name */}
           <a
-            href='/'
+            href='/DevNerd/'
             className='flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse'
           >
             {/* Insert your logo image or icon here */}
