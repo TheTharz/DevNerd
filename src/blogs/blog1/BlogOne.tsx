@@ -64,7 +64,7 @@ function BlogOne({}: Props) {
         <p className='text-base md:text-lg leading-relaxed mt-4'>
           <strong>app.js:</strong>
         </p>
-        <ul className='list-disc ml-6'>
+        <ul className='list-disc ml-6 md:text-lg leading-relaxed'>
           <li>
             Purpose: The app.js file is often the entry point of your backend
             application. It's where you initialize your server, set up
@@ -84,7 +84,7 @@ function BlogOne({}: Props) {
         <p className='text-base md:text-lg leading-relaxed mt-4'>
           <strong>index.js:</strong>
         </p>
-        <ul className='list-disc ml-6'>
+        <ul className='list-disc ml-6 md:text-lg leading-relaxed'>
           <li>
             Purpose: The index.js file is another entry point for your
             application. It's commonly used to start the server or bootstrap the
@@ -100,7 +100,7 @@ function BlogOne({}: Props) {
         <p className='text-base md:text-lg leading-relaxed mt-4'>
           <strong>config Folder:</strong>
         </p>
-        <ul className='list-disc ml-6'>
+        <ul className='list-disc ml-6 md:text-lg leading-relaxed'>
           <li>
             Purpose: The config folder typically contains configuration files
             for your backend application. These files may include settings
@@ -116,7 +116,7 @@ function BlogOne({}: Props) {
         <p className='text-base md:text-lg leading-relaxed mt-4'>
           <strong>helpers Folder:</strong>
         </p>
-        <ul className='list-disc ml-6'>
+        <ul className='list-disc ml-6 md:text-lg leading-relaxed'>
           <li>
             Purpose: The helpers folder typically contains utility functions or
             helper modules that are used across different parts of your
@@ -132,7 +132,7 @@ function BlogOne({}: Props) {
         <p className='text-base md:text-lg leading-relaxed mt-4'>
           <strong>middleware Folder:</strong>
         </p>
-        <ul className='list-disc ml-6'>
+        <ul className='list-disc ml-6 md:text-lg leading-relaxed'>
           <li>
             Purpose: The middleware folder is where you store functions or
             modules that intercept and process requests before they reach the
@@ -148,7 +148,7 @@ function BlogOne({}: Props) {
         <p className='text-base md:text-lg leading-relaxed mt-4'>
           <strong>models Folder:</strong>
         </p>
-        <ul className='list-disc ml-6'>
+        <ul className='list-disc ml-6 md:text-lg leading-relaxed'>
           <li>
             Purpose: The models folder typically contains files representing
             data structures and interactions with your database. Each model file
@@ -286,7 +286,7 @@ function BlogOne({}: Props) {
           The diagram above illustrates a simplified version of how an endpoint
           works in a MERN backend. Here's a step-by-step breakdown:
         </p>
-        <ol className='list-decimal ml-6'>
+        <ol className='list-decimal ml-6 md:text-lg leading-relaxed'>
           <li>
             Request Arrival: A request is sent to a specific endpoint (e.g.,
             /createuser).
@@ -319,7 +319,7 @@ function BlogOne({}: Props) {
         <h4 className='text-xl md:text-2xl font-semibold mt-6'>
           Key Points for Maintainability and Scalability
         </h4>
-        <ul className='list-disc ml-6'>
+        <ul className='list-disc ml-6 md:text-lg leading-relaxed'>
           <li>
             Clear Separation of Concerns: The structure promotes modularity,
             making code easier to understand, maintain, and test.
@@ -349,7 +349,7 @@ function BlogOne({}: Props) {
         <h4 className='text-xl md:text-2xl font-semibold mt-6'>
           Additional Considerations:
         </h4>
-        <ul className='list-disc ml-6'>
+        <ul className='list-disc ml-6 md:text-lg leading-relaxed'>
           <li>
             Error Handling: Implement robust error handling mechanisms to ensure
             graceful error responses and maintain application stability.
