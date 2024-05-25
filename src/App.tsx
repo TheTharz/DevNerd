@@ -8,7 +8,7 @@ function App() {
     <Router>
       <Routes>
         <Route path='/DevNerd/' element={<HomePage />} />
-        <Route path='/DevNerd/about' element={<AboutPage />} />
+        <Route path='/DevNerd/about/' element={<AboutPage />} />
 
         {/* Error route goes here */}
 
