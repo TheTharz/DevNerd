@@ -18,7 +18,7 @@ const BlogCard: React.FC<Blog> = ({ title, thumbnail, description, tags }) => {
           {title}
         </h5>
         <p className='mb-3 font-normal text-gray-700 dark:text-gray-400'>
-          {description}
+          {description.slice(0, 250)}...
         </p>
         <div className='flex flex-wrap'>
           {tags.map((tag, index) => (

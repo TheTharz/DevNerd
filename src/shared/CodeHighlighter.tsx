@@ -25,8 +25,12 @@ const CodeHighlighter: React.FC<CodeHighlighterProps> = ({
     typeof codeSnippet === 'string' ? codeSnippet.trim() : '';
 
   return (
-    <div className='relative w-2/3'>
-      <SyntaxHighlighter language={language} style={coldarkDark}>
+    <div className='relative w-full'>
+      <SyntaxHighlighter
+        language={language}
+        style={coldarkDark}
+        showLineNumbers
+      >
         {formattedCodeSnippet}
       </SyntaxHighlighter>
 
