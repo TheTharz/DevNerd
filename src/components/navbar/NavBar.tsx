@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import AboutPage from '../../pages/AboutPage';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -7,13 +8,19 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const [showAboutCard, setShowAboutCard] = useState(false); // State to control visibility of AboutCard
+
+  const toggleAboutCard = () => {
+    setShowAboutCard(!showAboutCard); // Toggle visibility of AboutCard
+  };
+
   return (
     <nav className='bg-slate-900 p-4 font-mono'>
       <div className='max-w-7xl mx-auto px-4'>
         <div className='flex justify-between items-center'>
           {/* Logo */}
           <div className='flex items-center'>
-            <a href='/DevNerd/' className='text-white text-2xl font-bold'>
+            <a href='/DevNerd/' className='text-white text-3xl font-bold'>
               DevNerd
             </a>
           </div>
@@ -43,10 +50,14 @@ const Navbar = () => {
             <a href='/DevNerd/' className='text-white hover:text-gray-200'>
               Home
             </a>
-            <a href='/DevNerd/about' className='text-white hover:text-gray-200'>
+
+            <p
+              className='text-white hover:text-gray-200'
+              onClick={toggleAboutCard}
+            >
               About
-            </a>
-            <a href='/DevNerd/blog' className='text-white hover:text-gray-200'>
+            </p>
+            {/* <a href='/DevNerd/blog' className='text-white hover:text-gray-200'>
               Blog
             </a>
             <a
@@ -54,7 +65,7 @@ const Navbar = () => {
               className='text-white hover:text-gray-200'
             >
               Contact
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
@@ -65,13 +76,14 @@ const Navbar = () => {
           <a href='/DevNerd/' className='text-white block hover:text-gray-200'>
             Home
           </a>
-          <a
-            href='/DevNerd/about'
-            className='text-white block hover:text-gray-200'
+
+          <p
+            className='text-white hover:text-gray-200'
+            onClick={toggleAboutCard}
           >
             About
-          </a>
-          <a
+          </p>
+          {/* <a
             href='/DevNerd/blog'
             className='text-white block hover:text-gray-200'
           >
@@ -82,9 +94,10 @@ const Navbar = () => {
             className='text-white block hover:text-gray-200'
           >
             Contact
-          </a>
+          </a> */}
         </div>
       )}
+      {showAboutCard && <AboutPage />}
     </nav>
   );
 };
