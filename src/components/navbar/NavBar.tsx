@@ -13,7 +13,7 @@ const Navbar = () => {
         <div className='flex justify-between items-center'>
           {/* Logo */}
           <div className='flex items-center'>
-            <a href='/DevNerd/' className='text-white text-2xl font-bold'>
+            <a href='/' className='text-white text-2xl font-bold'>
               DevNerd
             </a>
           </div>
@@ -40,10 +40,10 @@ const Navbar = () => {
 
           {/* Navbar links */}
           <div className='hidden md:flex space-x-4'>
-            <a href='/DevNerd/' className='text-white hover:text-gray-200'>
+            <a href='/' className='text-white hover:text-gray-200'>
               Home
             </a>
-            <a href='/DevNerd/about' className='text-white hover:text-gray-200'>
+            <a href='/about' className='text-white hover:text-gray-200'>
               About
             </a>
             <a href='/DevNerd/blog' className='text-white hover:text-gray-200'>
@@ -62,13 +62,10 @@ const Navbar = () => {
       {/* Mobile menu */}
       {isOpen && (
         <div className='md:hidden px-2 pt-2 pb-3 space-y-1'>
-          <a href='/DevNerd/' className='text-white block hover:text-gray-200'>
+          <a href='/' className='text-white block hover:text-gray-200'>
             Home
           </a>
-          <a
-            href='/DevNerd/about'
-            className='text-white block hover:text-gray-200'
-          >
+          <a href='/about' className='text-white block hover:text-gray-200'>
             About
           </a>
           <a
