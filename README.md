@@ -1,6 +1,6 @@
 # DevNerd Blog by Tharindu Jayawardhana
 [![Deploy](https://github.com/TheTharz/DevNerd/actions/workflows/deploy.yml/badge.svg)](https://github.com/TheTharz/DevNerd/actions/workflows/deploy.yml)
-
+[![Deploy](https://github.com/TheTharz/DevNerd/actions/workflows/deploy.yml/badge.svg)](https://github.com/TheTharz/DevNerd/actions/workflows/deploy.yml)
 Welcome to **DevNerd**, my personal blog dedicated to all things technology! I'm Tharindu Jayawardhana, a passionate computer engineering student, and this blog is where I share my thoughts, experiences, and insights about the ever-evolving world of technology.
 
 ## Summary
